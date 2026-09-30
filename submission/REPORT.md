@@ -7,7 +7,7 @@
 - **Họ và tên:** Trần Trọng Chinh
 - **MSSV:** 2A202602720
 - **Lớp:** K4-L3A
-- **Repository URL:** https://github.com/chinhzz108/K4-L3A-Day13-Monitoring-LLMOps
+- **Repository URL:** https://github.com/chinhdz102/K4-L3-DAY13-TranTrongChinh-2A202602720-Monitoring-LLMOps
 - **Commit SHA cuối:** f6b9b12bb8f2d3c26824bf3e1114937401fce0d8
 - **Challenge ID:** challenge-k4-l3a-2a202602720
 - **Tên project Langfuse cá nhân:** `day13-k4-l3a-2A202602720`
