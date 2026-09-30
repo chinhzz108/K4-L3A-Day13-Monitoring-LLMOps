@@ -1,0 +1,37 @@
+=== INCIDENT REQUEST RECEIVED ===
+{
+  "service": "api",
+  "payload": {
+    "message_preview": "How does monitoring work?"
+  },
+  "event": "request_received",
+  "session_id": "sess_fail",
+  "feature": "qa",
+  "env": "dev",
+  "model": "claude-sonnet-4-5",
+  "correlation_id": "req-c8baad2c",
+  "user_id_hash": "8be07f9decb0",
+  "level": "info",
+  "ts": "2026-09-30T02:29:06.157190Z"
+}
+
+=== INCIDENT REQUEST FAILED (ERROR LOG) ===
+{
+  "service": "api",
+  "error_type": "RuntimeError",
+  "tool_name": "retrieval",
+  "tool_success": false,
+  "payload": {
+    "detail": "Vector store timeout",
+    "message_preview": "How does monitoring work?"
+  },
+  "event": "request_failed",
+  "session_id": "sess_fail",
+  "feature": "qa",
+  "env": "dev",
+  "model": "claude-sonnet-4-5",
+  "correlation_id": "req-c8baad2c",
+  "user_id_hash": "8be07f9decb0",
+  "level": "error",
+  "ts": "2026-09-30T02:29:06.158543Z"
+}

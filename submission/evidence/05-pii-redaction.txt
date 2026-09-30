@@ -1,0 +1,48 @@
+=== RAW INPUT TEST PAYLOAD ===
+user_id: student_chinh
+message: My email is chinh@example.com, phone 0912345678, cccd 001234567890, card 4111 2222 3333 4444
+
+=== SCRUBBED STRUCTURED LOG (REQUEST RECEIVED) ===
+{
+  "service": "api",
+  "payload": {
+    "message_preview": "My email is [REDACTED_EMAIL], phone [REDACTED_PHONE_VN], cccd [REDACTED_CCCD], c..."
+  },
+  "event": "request_received",
+  "session_id": "sess_pii_test",
+  "feature": "qa",
+  "env": "dev",
+  "model": "claude-sonnet-4-5",
+  "correlation_id": "req-3fac79c6",
+  "user_id_hash": "8be07f9decb0",
+  "level": "info",
+  "ts": "2026-09-30T02:27:46.851428Z"
+}
+
+=== SCRUBBED STRUCTURED LOG (RESPONSE SENT) ===
+{
+  "service": "api",
+  "latency_ms": 150,
+  "ttft_ms": 50,
+  "tokens_in": 43,
+  "tokens_out": 101,
+  "cost_usd": 0.001644,
+  "quality_score": 0.9,
+  "tool_name": "retrieval",
+  "tool_success": true,
+  "payload": {
+    "answer_preview": "Starter answer. You should improve this output logic and add better quality chec..."
+  },
+  "event": "response_sent",
+  "session_id": "sess_pii_test",
+  "feature": "qa",
+  "env": "dev",
+  "model": "claude-sonnet-4-5",
+  "correlation_id": "req-3fac79c6",
+  "user_id_hash": "8be07f9decb0",
+  "level": "info",
+  "ts": "2026-09-30T02:27:47.002978Z"
+}
+
+=== VERIFICATION RESULT ===
+Raw Email, Phone, CCCD, Card: None leaked (0 detections in validate_logs.py)
